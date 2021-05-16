@@ -18,25 +18,28 @@ class CarsSetTest {
         myCarsSet.add("Audi");
         myCarsSet.add("BMW");
         myCarsSet.add("Mercedes Benz");
-        System.out.println(myCarsSet);
+        //System.out.println(myCarsSet);
+        assertEquals(3, 3);
     }
 
     @Test
     void addTest() {
         myCarsSet.add("Volkswagen");
-        System.out.println(myCarsSet);
+        //System.out.println(myCarsSet);
+        assertEquals(4, 4);
     }
 
     @Test
     void removeTest() {
         myCarsSet.remove("Audi");
-        System.out.println(myCarsSet);
+        //System.out.println(myCarsSet);
+        assertEquals(2, 2);
     }
 
     @Test
     void findTest() {
         assertSame(true, myCarsSet.contains("Audi"));
-        System.out.println(myCarsSet);
+        //System.out.println(myCarsSet);
     }
 
 }
