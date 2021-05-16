@@ -1,6 +1,6 @@
 package za.ac.cput;
 
-public class Cars {
+public class CarsList {
 
     private String make, model;
     private int year;
