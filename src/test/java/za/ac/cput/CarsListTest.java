@@ -18,5 +18,26 @@ class CarsListTest {
         myCarsListTest.add("Audi");
         myCarsListTest.add("BMW");
         myCarsListTest.add("Mercedes Benz");
+        //System.out.println(myCarsListTest);
+        assertEquals(3, 3);
+    }
+
+    @Test
+    void addTest() {
+        myCarsListTest.add("Volkswagen");
+        //System.out.println(myCarsListTest);
+        assertEquals(4, 4);
+    }
+
+    @Test
+    void removeTest(){
+        myCarsListTest.remove(1);
+        //System.out.println(myCarsListTest);
+        assertEquals(2, 2);
+    }
+
+    @Test
+    void findTest() {
+        assertSame("Audi", myCarsListTest.get(0));
     }
 }
